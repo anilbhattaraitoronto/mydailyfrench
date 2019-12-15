@@ -94,10 +94,10 @@ header{
     width: 100%;
     margin: auto;
     transition: 300ms ease-in-out;
+    border: 1px solid lightgray;
+    padding: 4px;
 }
-.blog-content img:hover{
-    transform: scale(1.02);
-}
+
 .blog-content figcaption{
     font-size: 13px;
     font-style: italic;
