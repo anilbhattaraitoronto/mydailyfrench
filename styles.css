@@ -8,16 +8,16 @@
 }
 body{
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 header{
     text-align: center;
     padding-top: 20px;
-    background: navy;
+    background-image: linear-gradient(to right, rgb(197, 182, 207), rgb(202, 173, 230));
 }
 .masthead{
-    color: yellow;
+    /* color: yellow; */
     font-size: 24px;
 }
 .masthead::after{
@@ -41,7 +41,44 @@ header{
 }
 #root{
     width: 100%;
+    padding: 0 10px;
 }
+#main-content{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px 0;
+}
+#blog-container, #fweet-container{
+    
+
+}
+#fweet-container{
+    
+}
+.fweet{
+    opacity: .8;
+    border-bottom: 1px solid lightgray;
+    font-size: 14px;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+.blog{
+    border-bottom: 2px solid lightgray;
+    
+}
+.blog-content img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.blog-content figcaption{
+    font-size: 13px;
+    font-style: italic;
+    opacity: .7;
+    padding: 5px 0;
+}
+
 .lesson-title{
     text-align: center;
 }
@@ -90,4 +127,10 @@ footer{
     font-size: 14px;
     text-align: center;
     opacity: .7;
+}
+@media (min-width: 650px){
+    #main-content{
+        grid-template-columns:1fr 200px;
+        grid-gap: 10px;
+    }
 }

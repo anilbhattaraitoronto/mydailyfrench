@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1 class="masthead">My Daily French</h1>
+        <h1 class="masthead">Mon français quotidien</h1>
         <ul id="main-nav">
             
         </ul>
@@ -19,18 +19,32 @@
 
     <main id="root">
 
-        <section id="post-container">
-            <article id="blog-container"></article>
-            <article id="blog-titles"></article>
-        </section>
-          
-        
+        <div id="main-content">
+            
+            <section id="blog-container">
+                <article class="blogs" >
+                    <h2 class="section-title">Blogs</h2>
+                    <div class="blog" v-for="blog in blogs" v-if="!blog.draft">
+                        <h3 class="blog-title">{{blog.title}}</h3>
+                        <div class="blog-content" v-html="blog.content">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="fweet-container">
+                <h2 class="section-title">Fweets</h2>
+                <article class="fweet" v-for="fweet in fweets">
+                    <p>{{fweet.content}}</p></article>
+            </section>
+
+           
+        </div>
+
         <footer>
             <p>&copy; Anil Bhattarai, 2019 - {{ new Date().getFullYear() }}. All Rights Reserved.</p>
         </footer>
     </main>
    
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="/js/app.mjs" type="module" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    <script src="./js/app.mjs" type="module" ></script>
 </body>
 </html>
