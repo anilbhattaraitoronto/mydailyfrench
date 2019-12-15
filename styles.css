@@ -16,7 +16,7 @@ body{
 header{
     text-align: center;
     padding-top: 20px;
-    background-image: linear-gradient(to right, rgb(197, 182, 207), rgb(202, 173, 230));
+    background-image: linear-gradient(to right, rgb(190, 182, 207), rgb(217, 189, 243));
 }
 .masthead{
     color: rgb(36, 3, 49);
@@ -79,7 +79,7 @@ header{
     transform: scale(1.02);
 }
 .blog{
-    border-bottom: 2px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 .blog-title{
     padding-bottom: 10px;
@@ -93,6 +93,10 @@ header{
     display: block;
     width: 100%;
     margin: auto;
+    transition: 300ms ease-in-out;
+}
+.blog-content img:hover{
+    transform: scale(1.02);
 }
 .blog-content figcaption{
     font-size: 13px;
