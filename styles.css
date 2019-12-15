@@ -1,0 +1,93 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+body{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+header{
+    text-align: center;
+    padding-top: 20px;
+    background: navy;
+}
+.masthead{
+    color: yellow;
+    font-size: 24px;
+}
+.masthead::after{
+    content: "learn a new language, expand your world";
+    display: block;
+    font-size: 11px;
+    color: gray;
+    padding: 5px 0;
+    font-style: italic;
+}
+#main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-nav li{
+    list-style-type: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: white;
+}
+#root{
+    width: 100%;
+}
+.lesson-title{
+    text-align: center;
+}
+.lesson-box{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    width: 340px;
+    background:navy;
+    margin: 10px auto;
+}
+.lesson-box .english{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.prev-item, .next-item{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.prev-item{
+    left: 5px;
+}
+.next-item{
+    right: 5px;
+}
+.nepali{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: white;
+    border-radius: 50%;
+    font-size: 48px;
+    padding-top: 24px;
+}
+
+footer{
+    font-size: 14px;
+    text-align: center;
+    opacity: .7;
+}
