@@ -62,6 +62,10 @@ header{
     margin: 20px auto;
     padding-bottom: 10px;
     font-style: italic;
+    cursor: pointer;
+}
+.fweet:hover{
+    transform: scale(1.02);
 }
 .blog{
     border-bottom: 2px solid lightgray;
@@ -79,49 +83,7 @@ header{
     padding: 5px 0;
 }
 
-.lesson-title{
-    text-align: center;
-}
-.lesson-box{
-    position: relative;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 340px;
-    width: 340px;
-    background:navy;
-    margin: 10px auto;
-}
-.lesson-box .english{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-}
-.prev-item, .next-item{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-}
-.prev-item{
-    left: 5px;
-}
-.next-item{
-    right: 5px;
-}
-.nepali{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    background: white;
-    border-radius: 50%;
-    font-size: 48px;
-    padding-top: 24px;
-}
+
 
 footer{
     font-size: 14px;
