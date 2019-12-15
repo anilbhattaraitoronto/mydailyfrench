@@ -59,6 +59,7 @@ header{
     background: rgb(239, 233, 240);
     padding: 0 10px;
     height: 100vh;
+    box-shadow: 0 0 1px rgb(63, 61, 61);
 }
 .section-title{
     padding-bottom: 10px;
@@ -80,6 +81,10 @@ header{
 }
 .blog{
     border-bottom: 1px solid lightgray;
+    box-shadow: 0 0 1px lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    
 }
 .blog-title{
     padding-bottom: 10px;
@@ -92,7 +97,7 @@ header{
 .blog-content img{
     display: block;
     width: 100%;
-    margin: auto;
+    margin: 5px auto;
     transition: 300ms ease-in-out;
     border: 1px solid lightgray;
     padding: 4px;
