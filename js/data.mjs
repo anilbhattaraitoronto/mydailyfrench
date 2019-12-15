@@ -13,8 +13,11 @@ export let posts = {
     //Fweets List
     fweets: [
         {
+            content: "Je vous souhouite une bonne nouvelle annee"
+        },
+        {
+            content: "C'est ma prémiere fweet. Bienvenue "// short tweet-liksnippet
+        },
 
-            content: "C'est ma prémiere fweet. Bienvenue "// short tweet-like snippet
-        }
     ]
 }
